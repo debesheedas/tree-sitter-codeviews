@@ -18,30 +18,30 @@ class CustomParser:
             "build/my-languages.so",
             [
                 "vendor/tree-sitter-java",
-                "vendor/tree-sitter-c-sharp",
-                "vendor/tree-sitter-ruby",
-                "vendor/tree-sitter-go",
-                "vendor/tree-sitter-php",
+                # "vendor/tree-sitter-c-sharp",
+                # "vendor/tree-sitter-ruby",
+                # "vendor/tree-sitter-go",
+                # "vendor/tree-sitter-php",
                 "vendor/tree-sitter-python",
-                "vendor/tree-sitter-javascript",
+                # "vendor/tree-sitter-javascript",
             ],
         )
         PYTHON_LANGUAGE = Language("build/my-languages.so", "python")
         JAVA_LANGUAGE = Language("build/my-languages.so", "java")
-        C_SHARP_LANGUAGE = Language("build/my-languages.so", "c_sharp")
-        RUBY_LANGUAGE = Language("build/my-languages.so", "ruby")
-        GO_LANGUAGE = Language("build/my-languages.so", "go")
-        PHP_LANGUAGE = Language("build/my-languages.so", "php")
-        JAVASCRIPT_LANGUAGE = Language("build/my-languages.so", "javascript")
+        # C_SHARP_LANGUAGE = Language("build/my-languages.so", "c_sharp")
+        # RUBY_LANGUAGE = Language("build/my-languages.so", "ruby")
+        # GO_LANGUAGE = Language("build/my-languages.so", "go")
+        # PHP_LANGUAGE = Language("build/my-languages.so", "php")
+        # JAVASCRIPT_LANGUAGE = Language("build/my-languages.so", "javascript")
 
         self.language_map = {
             "python": PYTHON_LANGUAGE,
             "java": JAVA_LANGUAGE,
-            "c_sharp": C_SHARP_LANGUAGE,
-            "ruby": RUBY_LANGUAGE,
-            "go": GO_LANGUAGE,
-            "php": PHP_LANGUAGE,
-            "javascript": JAVASCRIPT_LANGUAGE,
+            # "c_sharp": C_SHARP_LANGUAGE,
+            # "ruby": RUBY_LANGUAGE,
+            # "go": GO_LANGUAGE,
+            # "php": PHP_LANGUAGE,
+            # "javascript": JAVASCRIPT_LANGUAGE,
         }
         self.root_node = self.parse()
         self.all_tokens = []
